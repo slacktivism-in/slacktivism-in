@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="text/javascript" src="./events.json"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <title>Slacktivism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="bigimage1" id="home">
+        <div class="heading">
+            <a href="#home">
+                <span>S</span><span>LACKTIVIS</span><span>M</span>
+            </a>
+        </div>
+        <div class="menu">
+            <span><a href="#about">About Us</a></span>
+            <span><a href="#events-section">Events</a></span>
+            <span><a href="#contact">Contact</a></span>
+        </div>
+        <div class="mobile-menu">
+            <i onclick="openCloseMenu()" class="fa fa-bars" style="margin: 0;color: #fff; font-size: 1.4rem !important;"
+                aria-hidden="true"></i>
+        </div>
+        <div class="menu-container d-none slide-in" id="menu">
+            <i onclick="openCloseMenu()" class="fa fa-close"
+                style="margin: 1rem;color: #111; font-size: 1.4rem !important;" aria-hidden="true"></i>
+            <div class="menu-item cursor-pointer" onclick="openCloseMenu('#about')">About Us</div>
+            <div class="menu-item cursor-pointer" onclick="openCloseMenu('#events-section')">Events</div>
+            <div class="menu-item cursor-pointer" onclick="openCloseMenu('#contact')">Contact</div>
+            <div class="tagline">
+                <span>Slacktivism</span>
+            </div>
+        </div>
+
+        <div class="caption-transparent">
+            <span class="border">Slacktivism Delhi Slackline Community</span>
+            <br />
+            <span class="border-small">Balance is not something you find, it's something you create</span>
+        </div>
+    </div>
+    <div class="text-container" id="about">
+        <div class="blog-text">
+            <h2>About Us</h2>
+            <span>
+                <b>Slacklining</b> refers to the act of balanced walking on a flat
+                webbing that is tensioned between two anchors.
+                <br />
+                <br />
+                The Delhi based SLacktivism slackline community, started in 2013 by Enrico Fabian. The community comes together almost every Sunday.
+                Started in parks, based on weather the community holds regular sessions for Waterline and Highline in outskirts of Delhi. 
+                <br />
+                <br />
+                Interested to to Slack your way on line, look-up for weekly updates on <a target="_blank" href="https://www.instagram.com/slacktivism.in/">Instagram</a> or <a target="_blank" href="https://www.facebook.com/groups/SlacktivismIndia">Facebook</a>
+            </span>
+        </div>
+    </div>
+    <div class="bigimage2">
+        <div class="caption-transparent">
+            <span class="border-small">There is nothing outside of yourself, that can ever enable you, to get better,
+                stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing, outside
+                yourself.</span>
+        </div>
+    </div>
+    <div class="text-container" id="events-section">
+        <div class="blog-text">
+            <h2>Events</h2>
+            <div id="events">
+            </div>
+        </div>
+    </div>
+    <div class="bigimage3">
+        <div class="caption-transparent">
+            <span class="border-small">There is nothing outside of yourself, that can ever enable you, to get better,
+                stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing, outside
+                yourself.</span>
+        </div>
+    </div>
+    <div class="footer" id="contact">
+        <span class="author">POWERED BY SLACKTIVISM</span>
+        <div class="social-container">
+            <a target="_blank" href="https://www.facebook.com/groups/SlacktivismIndia" class="fa fa-facebook"></a>
+<!--             <a target="_blank" href="https://twitter.com/search?q=slacktivism&src=recent_search_click"
+                class="fa fa-twitter"></a> -->
+            <a target="_blank" href="https://www.instagram.com/slacktivism.in/" class="fa fa-instagram"></a>
+        </div>
+    </div>
+</body>
+
+</html>
