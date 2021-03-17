@@ -9,6 +9,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #fff;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* color: #777; */
   min-height: 100vh;
@@ -18,7 +19,7 @@ body {
 a {
   color: #000;
 }
-
+.mySlides {display:none;}
 
 /* /container */
 
@@ -53,7 +54,7 @@ a {
 }
 
 .blog-text {
-  padding: 8rem 16rem;
+  padding: 4rem 16rem;
   background-color: #fff;
 }
 
@@ -107,6 +108,7 @@ a {
 .caption-transparent span.border {
   color: #fff;
   font-weight: 700;
+  text-shadow: 0.6px 0.6px 2px #000;
   font-size: 2rem;
   letter-spacing: 0.6rem;
 }
@@ -114,25 +116,26 @@ a {
 .caption-transparent span.border-small {
   color: #fff;
   font-size: 1rem;
+  text-shadow: 0.6px 0.6px 2px #000;
   letter-spacing: 0.2rem;
 }
 
 
 /* Images */
 .bigimage1 {
-  background-image: url("https://wallpapercave.com/wp/wp4675506.jpg");
+  background-image: url("./images//carousel-12.jpg");
   min-height: 100vh;
   height: 100vh;
 }
 
 .bigimage2 {
-  background-image: url("https://wallpapercave.com/wp/wp4675473.jpg");
+  background-image: url("./images//carousel-6.jpg");
   min-height: 100vh;
   height: 100vh;
 }
 
 .bigimage3 {
-  background-image: url("https://wallpapercave.com/wp/wp4675478.jpg");
+  background-image: url("./images//carousel-11.jpg");
   min-height: 80vh;
   height: 80vh;
 }
@@ -246,6 +249,12 @@ a {
 
 /* Media */
 @media only screen and (max-width: 600px) {
+
+
+  #carousel {
+    width: 100% !important;
+  }
+
   .heading {
     font-weight: 900;
     padding: 0.8rem 1.4rem;
@@ -281,6 +290,7 @@ a {
     /* background-color: rgb(17, 17, 17, 0.4); */
     color: #fff;
     font-size: 0.8rem;
+    text-shadow: 0.6px 0.6px 2px #000;
     font-weight: 500;
     letter-spacing: 0.1rem;
   }
@@ -407,6 +417,10 @@ a {
     padding: 4rem 2rem;
   }
   
+  #carousel {
+    width: 100% !important;
+  }
+
   .blog-text span{
     font-size: 0.9rem;
     line-height: 1.4rem;
@@ -429,4 +443,19 @@ a {
     width: 100% !important;
     margin-bottom: 2rem;
   }
+}
+
+#carousel {
+ margin-bottom: 20px; 
+ background-color: #fff;
+ align-self: center;
+ width: 50%;
+}
+
+.carousel-image {
+  border-radius: 8px;
+}
+
+.text-container {
+  background-color: #fff;
 }

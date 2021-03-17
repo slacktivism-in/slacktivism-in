@@ -1,4 +1,53 @@
 let events = [];
+let images = [];
+let slideIndex = 1;
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+setInterval(() => {
+    plusDivs(1)
+}, 5000)
+
+function showDivs(n) {
+    let i;
+    let x = document.getElementsByClassName("mySlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+}
+
+fetch('carousel-images.json')
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (response) {
+        images = response.images
+        updateCarousel();
+        showDivs(slideIndex);
+    })
+    .catch(function (err) {
+        console.log(err);
+    });
+
+
+let updateCarousel = function () {
+    let carouselDiv = document.getElementById('carousel');
+    images.map(image => {
+        carouselDiv.insertAdjacentHTML('afterbegin', `
+        <div class="w3-display-container mySlides">
+        <img class="carousel-image" src="${image.src}" style="width:  100%;
+        height: 640px;
+        object-fit: cover;">
+      </div>
+        `)
+    });
+}
+
 fetch('events.json')
     .then(function (response) {
         return response.json()
