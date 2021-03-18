@@ -166,6 +166,19 @@ a {
   flex-direction: row;
 }
 
+.social-container-floating {
+  position: sticky;
+  float: right;
+  right: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  bottom: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
 /* Icons */
 .fa {
   margin: 1.5rem;
@@ -181,7 +194,14 @@ a {
 
 .fa-facebook, .fa-twitter, .fa-instagram {
   background: #111;
-  color: #fff !important;
+  color: #fff;
+}
+
+.social-container-floating > .fa-facebook, 
+.social-container-floating > .fa-twitter, 
+.social-container-floating > .fa-instagram {
+  background: #fff;
+  color: #000;
 }
 
 /* Common */
@@ -250,7 +270,6 @@ a {
 /* Media */
 @media only screen and (max-width: 600px) {
 
-
   #carousel {
     width: 100% !important;
   }
@@ -294,6 +313,7 @@ a {
     font-weight: 500;
     letter-spacing: 0.1rem;
   }
+
   .fa {
     margin: 0.8rem;
     font-size: 1.2rem !important;
@@ -413,6 +433,7 @@ a {
 
 
 @media only screen and (max-width: 768px) {
+
   .blog-text {
     padding: 4rem 2rem;
   }

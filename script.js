@@ -83,6 +83,7 @@ function openCloseMenu(hash) {
     let menuElement = document.getElementById('menu');
     if (menuElement.classList.contains('slide-out') || !menuElement.classList.contains('slide-in')) {
         document.getElementsByTagName('body')[0].classList.remove('overflow-hidden')
+        document.getElementsByTagName('html')[0].classList.remove('overflow-hidden')
         menuElement.classList.remove('slide-out');
         menuElement.classList.add('slide-in');
         setTimeout(() => {
@@ -90,6 +91,7 @@ function openCloseMenu(hash) {
         }, 500);
     } else {
         document.getElementsByTagName('body')[0].classList.add('overflow-hidden')
+        document.getElementsByTagName('html')[0].classList.add('overflow-hidden')
         menuElement.classList.remove('slide-in');
         menuElement.classList.add('slide-out');
         menuElement.classList.remove('d-none');
