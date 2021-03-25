@@ -43,6 +43,7 @@ let updateCarousel = function () {
         <img class="carousel-image" src="${image.src}" style="width:  100%;
         height: 640px;
         object-fit: cover;">
+        <div class="text">${image.alt}</div>
       </div>
         `)
     });
@@ -72,6 +73,8 @@ let updateEvents = function () {
             ${event.location}
             </a>
             </span>
+            <br/>
+            <span>Address: ${event.address || ""}</span>
             <br/>
             <span>Message: ${event.message}</span>
             <br/>

@@ -204,6 +204,17 @@ a {
   color: #000;
 }
 
+.text {
+  background-color: rgba(0,0,0, 0.6);
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
 /* Common */
 .d-none {
   display: none !important;
@@ -257,7 +268,7 @@ a {
 }
 
 .menu a {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #fff !important;
   text-decoration: none !important;
 }
