@@ -1,11 +1,21 @@
 {
     "events": [
         {
-            "title": "Slackline Sunday Park Community Session",
+            "title": "Slackline Sunday - Nehru Park Community Session",
             "message": "The session is free, unless stated. Mask and Good Vibes mandatory",
-            "time": "1pm-5pm",
+            "time": "1pm-7pm",
             "date": "Each Sunday of every month.",
-            "location": "Slacktivism pancheel spot",
+            "location": "Slacktivism Nehru Park Spot",
+            "address": "Nehru Park, Chanakyapuri, New Delhi",
+            "gmap_link": "https://goo.gl/maps/pxeS4fAtkNSrfewPA"
+        },
+        {
+            "title": "Slackline Sunday - Panchsheel Park Community Session",
+            "message": "The session is free, unless stated. Mask and Good Vibes mandatory",
+            "time": "1pm-7pm",
+            "date": "Each Sunday of every month.",
+            "location": "Slacktivism panchsheel spot",
+            "address": "Panchsheel Enclave, Block A-1, Soami Nagar, New Delhi",
             "gmap_link": "https://www.google.com/maps?q=28.5460108,77.2244532&z=17&hl=en"
         }
     ]
