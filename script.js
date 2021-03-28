@@ -66,7 +66,7 @@ let updateEvents = function () {
     events.map(event => {
         eventDiv.insertAdjacentHTML('afterbegin', `<div class="event">
             <h4>${event.title}</h4>
-            <span>Timing: ${event.date} ${event.time}</span>
+            <span>Timing: ${event.date}</span>
             <br/>
             <span>
             Location: <a target="_blank" href="${event.gmap_link}">
